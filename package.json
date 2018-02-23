@@ -1,0 +1,50 @@
+{
+  "name": "node-library-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a boilerplate for initial developement a library with nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "build": "./node_modules/.bin/webpack --colors --progress",
+    "watch": "npm run build -- --watch ",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:watch": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrunoApparecido/node-library-boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "webapi",
+    "nodejs-boilerplate"
+  ],
+  "author": "Bruno Alexandre Apparecido <brunoapparecido@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrunoApparecido/node-library-boilerplate/issues"
+  },
+  "homepage": "https://github.com/BrunoApparecido/node-library-boilerplate#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "husky": "^0.14.3",
+    "mocha": "^5.0.1",
+    "node-fetch": "^2.0.0",
+    "nyc": "^11.4.1",
+    "sinon": "^4.3.0",
+    "sinon-chai": "^2.14.0",
+    "sinon-stub-promise": "^4.0.0",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
