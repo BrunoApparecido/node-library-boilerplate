@@ -1,6 +1,8 @@
 # webapi-nodejs-boilerplate
 
-This is a boilerplate for initial developement a library with nodeJS
+This is a boilerplate for initial development a library with nodeJS
+
+## This is an Example a README.md
 
 ## Getting Started
 
